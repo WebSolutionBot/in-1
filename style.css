@@ -1,6 +1,21 @@
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #4d9dcb;
+    --color-brand2: #52d2d0d7;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
 *{
     padding: 0;
     margin: 0;
+}
+
+.body{
+    background-color: rgba(90, 151, 198, 0.886);
 }
 
 .navbar{
@@ -13,5 +28,46 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background: linear-gradient(url("background.jpg"));
+    /* float: right; */
+}
+
+.myBg{
+    background-image: image(url(./background.jpg));
+    /* width: 100%;
+    height: 280px; */
+}
+
+.devimg{
+    width: 11rem;
+    /* float: right; */
+    margin: 2rem;
+    border: 4px solid rgba(47, 46, 46, 0.779);
+    border-radius: 6rem;
+}
+
+.link-custom{
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    text-decoration: none;
+}
+
+.link-custom:hover{
+    color: black;
+}
+
+.services{
+    background-color: rgba(66, 80, 85, 0.956);
+}
+
+.services{
+    transition: all 0.5s;
+}
+
+.services:hover {
+    box-shadow: 0 0 0 8px var(--color-brand);
+}
+
+.text-head{
+    color: white;
 }
