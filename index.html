@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand " href="#">
                 <img src="./icons8-anonymous-mask.svg" alt="Bootstrap" width="40" height="26"
@@ -34,10 +34,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Blog">Blog</a>
+                        <a class="nav-link" href="#Services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Services">Services</a>
+                        <a class="nav-link" href="#About">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Contact">Contact</a>
@@ -51,14 +51,14 @@
     <div id="content-wrapper">
 
         <!-- Home -->
-        <section id="home" class="full-height">
-            <div class="container">
+        <section id="home" class="full-height" >
+            <div class="container" mt-2>
                 <div class="row">
                     <div class="col-lg-8">
-                        <img src="./devImg.jpg" class="devimg" alt="Rohit Mehra">
-                        <h1>ROHIT MEHRA</h1>
-                        <h5><em>WEB DEVELOPER, WEB DESIGNER</em></h5>
-                        <P class="intro">Welcome to my portfolio website! My name is Rohit Mehra and I am a Web
+                        <img src="./devImg.jpg" class="devimg" alt="Rohit Mehra" data-aos="fade-up">
+                        <h1 data-aos="fade-up">ROHIT MEHRA</h1>
+                        <h5 data-aos="fade-up"><em>WEB DEVELOPER, WEB DESIGNER</em></h5>
+                        <P class="intro"  data-aos-delay="300" data-aos="fade-up">Welcome to my portfolio website! My name is Rohit Mehra and I am a Web
                             Developer. If
                             you're looking to build a business website, you've come to the right place! With my
                             expertise in programming languages, I can help you create an attractive and functional
@@ -70,8 +70,10 @@
                             <br>
                             Contact me today to learn more about how I can help you build the website of your dreams.
                         </P>
-                        <button type="button" class="btn btn-outline-primary">Download CV</button>
+                        <div >
+                            <button type="button" class="btn btn-outline-primary">Download CV</button>
                         <button type="button" class="btn btn-outline-primary">Contact</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,9 +81,9 @@
         <!-- //Home -->
 
         <!--Services -->
-        <section id="Services" class="full-height">
+        <section id="Services" class="full-height" >
             <div class="container">
-                <div class="row pb-4">
+                <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
                         <h6 class="text-brand">Services</h6>
                         <h1>Services I Offer</h1>
@@ -89,12 +91,12 @@
                 </div>
                 <div class="row">
                     <!-- skill1 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-5" data-aos="fade-up">
                         <div class="services p-4 rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
                                 <i class="webIcon"><img src="./icons8-imac-50.png"></i>
                             </div>
-                            <h4 class="text-head fw-bold">Web Development</h4>
+                            <h5 class="text-head fw-bold">Web Development</h5>
                             <p class="text-head">Expert web development services tailored to your needs, creating
                                 beautiful and functional websites</p>
                             <a href="#" class="link-custom">
@@ -103,12 +105,12 @@
                         </div>
                     </div>
                     <!-- skill2 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-5" data-aos-delay="300" data-aos="fade-up">
                         <div class="services p-4 rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
-                                <i class="webIcon2"><img src="./icons8-web-design-80.png"></i>
+                                <i class="webIcon2"><img src="./icons8-web-design-48.png"></i>
                             </div>
-                            <h4 class="text-head fw-bold">Web Design</h4>
+                            <h5 class="text-head fw-bold">Web Design</h5>
                             <p class="text-head">Innovative web designs that captivate users, elevate brands, and
                                 deliver seamless online experiences.</p>
                             <a href="#" class="link-custom">
@@ -117,12 +119,12 @@
                         </div>
                     </div>
                     <!-- skill3 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-5" data-aos-delay="600" data-aos="fade-up">
                         <div class="services p-4 rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
-                                <i class="webIcon"><img src="./icons8-graphics-64.png"></i>
+                                <i class="webIcon"><img src="./icons8-design-48.png"></i>
                             </div>
-                            <h4 class="text-head fw-bold">Graphic Design</h4>
+                            <h5 class="text-head fw-bold">Graphic Design</h5>
                             <p class="text-head">Crafting visually stunning designs that bring your brand to life and
                                 leave a lasting impression</p>
                             <a href="#" class="link-custom">
@@ -136,6 +138,23 @@
             </div>
         </section>
         <!-- //Services -->
+        <!-- About -->
+        <section id="About" class="full-height">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">About</h6>
+                        <h1>My Education & Skills</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Education</h4>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <!-- //About -->
     </div>
     <!-- //CONTENT WRAPPER -->
 
