@@ -48,8 +48,9 @@
 .link-custom{
     color: white;
     font-weight: 700;
-    position: absolute;
+    position: relative;
     text-decoration: none;
+    
 }
 
 .link-custom:hover{
@@ -65,9 +66,20 @@
 }
 
 .services:hover {
-    box-shadow: 0 0 0 8px var(--color-brand);
+    box-shadow: -6px 6px 0 0 var(--color-brand);
 }
 
 .text-head{
     color: white;
 }
+
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+}
+
