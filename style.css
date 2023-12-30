@@ -9,16 +9,16 @@
     --font-base: "Bai Jamjuree";
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.body{
+.body {
     background-color: rgba(90, 151, 198, 0.886);
 }
 
-.navbar{
+.navbar {
     position: sticky;
     top: 0;
     background-color: var(--color-brand);
@@ -26,11 +26,11 @@
     z-index: 100;
 }
 
-.navbar .nav-link.active{
+.navbar .nav-link.active {
     color: var(--color-heading)
 }
 
-.full-height{
+.full-height {
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -38,85 +38,147 @@
     /* float: right; */
 }
 
-.myBg{
+#home {
+    background-image: url("./isometric-landing-page-design-background-template.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Services {
+    background-image: url("./teamwork-concept-isometric-background-template.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Projects {
+    background-image: url("./isometric-e-learning-background-template.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+    #home {
+        background-image: url("./—Pngtree—background\ design\ of\ creative\ geometry_1642668.png");
+        background-position: right right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #Services {
+        background: rgb(17, 111, 188);
+        background: linear-gradient(109deg, rgba(17, 111, 188, 1) 0%, rgba(66, 60, 201, 1) 48%, rgba(55, 21, 127, 0.7988445378151261) 100%);
+    }
+
+    #Projects {
+        background: rgb(17, 111, 188);
+        background: linear-gradient(109deg, rgba(17, 111, 188, 1) 0%, rgba(66, 60, 201, 1) 48%, rgba(55, 21, 127, 0.7988445378151261) 100%);
+    }
+}
+
+.myBg {
     background-image: image(url(./background.jpg));
     /* width: 100%;
     height: 280px; */
 }
 
-.devimg{
+.devimg {
     width: 11rem;
     /* float: right; */
-    margin: 2rem;
+    margin: 1.5rem;
     border: 4px solid rgba(47, 46, 46, 0.779);
     border-radius: 6rem;
 }
 
-.link-custom{
+.link-custom {
     color: white;
     font-weight: 700;
     position: relative;
     text-decoration: none;
-    
+
 }
 
-.link-custom:hover{
+.link-custom:hover {
     color: black;
 }
 
-.services{
-    background-color: rgba(66, 80, 85, 0.956);
+.services {
+    background-color: rgba(101, 115, 120, 0.522);
 }
 
-.services{
+.services {
     transition: all 0.5s;
 }
 
-.services:hover {
-    box-shadow: -6px 6px 0 0 var(--color-brand);
+/* Add your own styles here */
+#testimonial-carousel {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.text-head, .white{
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.client {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+.services:hover {
+    box-shadow: -6px 6px 0 0 rgb(217, 35, 68);
+    background-color: rgb(112, 186, 211);
+}
+
+.text-head,
+.white {
     color: white;
 }
 
-.iconbox{
+.iconbox {
     width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    background-color: var(--color-brand);
+    background-color: rgba(244, 244, 244, 0.819);
 }
 
-.hall{
+.hall {
     text-decoration: none;
 }
 
-.footer{
+.footer {
     background-color: rgba(66, 80, 85, 0.956);
     position: relative;
     bottom: 0;
     height: 15vh;
 }
 
-.fItem{
+.fItem {
     cursor: pointer;
 }
 
-.card-custom .card-custom-image img{
+.card-custom .card-custom-image img {
     overflow: hidden;
 }
 
-.card-custom .card-custom-image img{
+.card-custom .card-custom-image img {
     transition: all 0.4s ease;
 }
 
-.card-custom:hover .card-custom-image img{
+.card-custom:hover .card-custom-image img {
     transform: scale(1.1);
 }
 
-.base{
+.base {
     text-decoration: underline;
 }

@@ -13,3 +13,12 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// JavaScript to enable continuous carousel movement
+$(document).ready(function () {
+  // Set interval to move to the next slide every 3 seconds (3000 milliseconds)
+  $('#testimonial-carousel').carousel({
+    interval: 1000,
+    cycle: true
+  });
+});
